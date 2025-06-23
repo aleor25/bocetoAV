@@ -1,0 +1,20 @@
+.underline-animate {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animate::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.1em;
+  width: 0;
+  height: 3px;
+  background: #FFD600;
+  transition: width 0.3s ease;
+}
+
+.underline-animate:hover::after,
+.underline-animate:focus::after {
+  width: 100%;
+}
