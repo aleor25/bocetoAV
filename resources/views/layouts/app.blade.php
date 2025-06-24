@@ -16,14 +16,17 @@
 
     <!-- Script para el navbar en menú móvil -->
     @vite(['resources/js/navbar.js'])
-
-    <!-- Script para el botón de scroll -->
+    @vite(['resources/js/login.js'])
+    @vite(['resources/js/periodic-table.js'])
     @vite(['resources/js/scrollToTop.js'])
 
     <!-- Carga los componentes importados -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @vite('resources/css/views/landing.css')
     @vite('resources/css/views/navbar.css')
+    @vite('resources/css/views/periodic-table.css')
+
+
 
 
     <script src="{{ asset('js/3Dmol.js') }}"></script>

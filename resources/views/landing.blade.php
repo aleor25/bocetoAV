@@ -36,11 +36,17 @@
             <h2 class="text-2xl mb-2" style="font-family: 'Lilita One', cursive;">Explora la tabla periódica</h2>
             <p class="mb-4 text-right">Descubre todos los elementos químicos, sus propiedades y características de manera interactiva. Una herramienta esencial para estudiantes y amantes de la química.</p>
             <div class="mt-5">
-                <button style="background-color: var(--primary); color: #fff;" class="text-[1.2rem] py-3 px-6 rounded-lg cursor-pointer flex items-center justify-center gap-2 border-none transition-all duration-400 shadow-md min-w-[180px] hover:bg-[var(--secondary)] hover:-translate-y-1 hover:shadow-lg active:translate-y-0.5"
-                    onclick="window.location.href='/tablaperiodica'">
-                    <i class="fas fa-atom w-5 h-5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"></i>
+                <a href="{{ route('periodic-table') }}"
+                    class="inline-flex items-center justify-center text-[1.2rem]
+          py-3 px-6 rounded-lg cursor-pointer gap-2
+          transition-all duration-400 shadow-md
+          hover:bg-[var(--secondary)] hover:-translate-y-1 hover:shadow-lg active:translate-y-0.5"
+                    style="background-color: var(--primary); color: #fff;">
+                    <i class="fas fa-atom w-5 h-5 transition-transform duration-300
+               group-hover:scale-110 group-hover:rotate-6"></i>
                     Ver Tabla Periódica
-                </button>
+                </a>
+
             </div>
         </div>
         <img src="{{ asset('images/tbpicon.png') }}" alt="Icono tabla periódica" class="w-[300px] h-auto m-2 transition-transform duration-300 hover:scale-110" />
@@ -115,6 +121,4 @@
         </div>
     </div>
 </div>
-
-
 @endsection

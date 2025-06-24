@@ -1,6 +1,6 @@
 <nav class="bg-[#4e7989cb] backdrop-blur-lg top-0 left-0 w-full z-[1000] px-[70px] py-4 h-auto flex justify-between items-center transition-transform duration-300" id="navbar">
     <!-- Logo -->
-    <div class="flex items-center w-[220px] md:w-[260px] h-auto">
+    <div class="flex items-center w-[220px] md:w-[200px] h-auto">
         <a href="/" class="underline-animate w-full h-full">
             <img src="{{ asset('av.png') }}" alt="Logo" class="w-full h-full object-contain">
         </a>
@@ -26,8 +26,8 @@
     <!-- Botón Iniciar Sesión al final del navbar -->
     @guest
     <div class="ml-auto">
-        <a href="#"
-            class="text-white text-2xl no-underline underline-animate transition-all duration-200">
+        <a href="{{ route('login') }}"
+            class="text-white text- xl no-underline underline-animate transition-all duration-200">
             Iniciar sesión
         </a>
     </div>

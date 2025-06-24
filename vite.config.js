@@ -9,8 +9,12 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/js/scrollToTop.js',
                 'resources/js/navbar.js',
+                'resources/js/login.js',
+                'resources/js/periodic-table.js',
+
                 'resources/css/views/landing.css',
                 'resources/css/views/navbar.css',
+                'resources/css/views/periodic-table.css',
 
             ],
             refresh: true,

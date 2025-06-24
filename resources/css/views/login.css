@@ -1,0 +1,21 @@
+.login-title-tailwind {
+    position: relative;
+}
+.login-title-tailwind::before,
+.login-title-tailwind::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: #f4c542;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.login-title-tailwind::before { left: -50px; }
+.login-title-tailwind::after { right: -50px; }
+@media (max-width: 480px) {
+    .login-title-tailwind::before,
+    .login-title-tailwind::after {
+        display: none;
+    }
+}
