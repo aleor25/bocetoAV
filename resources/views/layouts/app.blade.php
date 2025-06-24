@@ -15,16 +15,21 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <!-- Script para el navbar en menú móvil -->
-    @vite(['resources/js/navbar.js'])
+    @vite(['resources/js/app.js'])
     @vite(['resources/js/login.js'])
+    @vite(['resources/js/navbar.js'])
     @vite(['resources/js/periodic-table.js'])
+    @vite(['resources/js/render-online.js'])
     @vite(['resources/js/scrollToTop.js'])
 
+
     <!-- Carga los componentes importados -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css'])
     @vite('resources/css/views/landing.css')
+    @vite('resources/css/views/login.css')
     @vite('resources/css/views/navbar.css')
     @vite('resources/css/views/periodic-table.css')
+    @vite('resources/css/views/render-online.css')
 
 
 

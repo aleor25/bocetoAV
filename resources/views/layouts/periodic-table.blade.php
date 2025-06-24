@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Tabla Periodica')
+@section('title', 'Tabla periodica')
 @section('content')
 
 <div class="max-w-6xl mx-auto px-[70px] py-8">

@@ -1,7 +1,5 @@
 @extends('layouts.app')
-
 @section('title', 'Login')
-
 @section('content')
 <div class="flex flex-col items-center justify-center min-h-[15vh] py-[5vh] px-2 bg-white max-w-[420px] w-full mx-auto">
     <h2 class="relative text-2xl md:text-3xl font-bold text-[#003366] mb-5 text-center login-title-tailwind">
@@ -43,7 +41,7 @@
 
             <div class="flex flex-wrap justify-between gap-2 mb-3">
                 <button type="submit" class="w-full bg-[#0A4D5F] hover:bg-[#083A45] text-white py-3 px-5 text-[15px] font-semibold rounded-lg transition-all duration-200 transform hover:scale-105 text-center">
-                    Iniciar Sesión
+                    Iniciar sesión
                 </button>
             </div>
 
@@ -55,6 +53,5 @@
         </form>
     </div>
 </div>
-
 
 @endsection

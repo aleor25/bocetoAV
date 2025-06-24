@@ -13,3 +13,7 @@ Route::get('/login', function () {
 Route::get('/periodictable', function () {
     return view('layouts.periodic-table');
 })->name('periodic-table');
+
+Route::get('/renderonline', function () {
+    return view('layouts.render-online');
+})->name('render-online');
