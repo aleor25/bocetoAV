@@ -1,5 +1,5 @@
 <footer class="w-full flex flex-col text-white" style="background-color: var(--primary);">
-    <div class="w-full px-[70px] py-6 flex justify-between items-center flex-col md:flex-row" style="background-color: var(--primary);">
+    <div class="w-full px-4 md:px-[70px] py-6 flex justify-between items-center flex-col md:flex-row" style="background-color: var(--primary);">
         <!-- Imagen a la izquierda -->
         <div class="flex items-center justify-center md:justify-start w-full md:w-auto mb-4 md:mb-0">
             <img src="{{ asset('av.png') }}" alt="Logo" class="w-[220px] md:w-[260px] h-auto object-contain">

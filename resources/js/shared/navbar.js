@@ -2,11 +2,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const navbar = document.getElementById("navbar");
     let lastScrollTop = 0;
     let navbarHeight = navbar.offsetHeight;
-    let threshold = navbarHeight / 2; // Ahora el umbral es la mitad del navbar
+    let threshold = navbarHeight / 2;
 
     window.addEventListener("scroll", function() {
         let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-        // Solo ocultar si se ha desplazado más de la mitad del navbar
         if (currentScroll > lastScrollTop && currentScroll > threshold) {
             navbar.style.transform = "translateY(-100%)";
         } else {
@@ -16,15 +15,17 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     window.toggleMenu = function(btn) {
-        const menu = document.querySelector('.navbar-right');
-        btn.classList.toggle('active');
-        menu.classList.toggle('active');
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('flex');
     };
 
-    document.querySelectorAll('.navbar-right a').forEach(link => {
+    // Cierra el menú móvil al hacer clic en un enlace
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
         link.addEventListener('click', () => {
-            document.querySelector('.navbar-right').classList.remove('active');
-            document.querySelector('.navbar-toggle').classList.remove('active');
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.add('hidden');
+            menu.classList.remove('flex');
         });
     });
 });
