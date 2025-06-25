@@ -62,7 +62,7 @@
     <div class="rounded-lg bg-gray-100 my-4 overflow-hidden shadow">
         <button class="w-full flex items-center justify-between text-left px-6 py-4 bg-[var(--primary)] text-white text-lg font-semibold dropdown-button-tailwind" onclick="toggleDropdown(this)">
             <span>{{ $titulo }}</span>
-            <img src="{{ asset('images/arrow-down.png') }}" alt="Desplegar" class="w-15 h-5 ml-3 transition-transform duration-300 arrow-icon">
+            <img src="{{ asset('images/arrow-down.png') }}" alt="Desplegar" class="ml-3 transition-transform duration-300 arrow-icon" style="width: 28px; height: 18px; min-width: 28px; min-height: 18px;">
         </button>
         <div class="dropdown-content-tailwind px-6 bg-white">
             @if($data['type'] == 'paragraph')
@@ -89,7 +89,7 @@
 
     <h2 class="text-2xl font-bold mt-10 mb-4 text-[var(--primary)]">Elementos más usados</h2>
 
-    <div class="overflow-x-auto">
+    <div class="overflow-x-auto pb-4 px-2">
         <table class="w-full border-collapse shadow-lg rounded-2xl overflow-hidden border border-gray-300">
             <thead>
                 <tr>

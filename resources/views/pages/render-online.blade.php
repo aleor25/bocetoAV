@@ -84,13 +84,13 @@
                 <div class="mb-4">
                     <h3 class="text-3xl font-bold mb-2 text-center">Busca tu archivo PDB</h3>
                     <!-- Formulario para cargar archivo -->
-                    <form id="uploadForm" enctype="multipart/form-data" class="flex flex-col md:flex-row gap-3 justify-between items-center m-4">
+                    <form id="uploadForm" enctype="multipart/form-data" class="flex flex-col md:flex-row gap-3 justify-between items-center my-4">
                         @csrf
                         <!-- Botón Buscar -->
                         <div class="w-full md:w-[48%]">
                             <label for="file"
-                                class="w-full block bg-[var(--info)] text-white py-3 text-center rounded-lg cursor-pointer text-base font-semibold transition-colors duration-300">
-                                Buscar
+                                class="w-full flex items-center justify-center gap-2 bg-[var(--info)] text-white py-3 text-center rounded-lg cursor-pointer text-base font-semibold transition-colors duration-300">
+                                <i class="fa-solid fa-magnifying-glass"></i> Buscar
                             </label>
                             <input type="file" id="file" name="file" accept=".pdb" class="hidden" required>
                         </div>

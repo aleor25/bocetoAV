@@ -16,20 +16,20 @@
 
     <!-- Script para el navbar en menú móvil -->
     @vite(['resources/js/app.js'])
-    @vite(['resources/js/login.js'])
-    @vite(['resources/js/navbar.js'])
-    @vite(['resources/js/periodic-table.js'])
-    @vite(['resources/js/render-online.js'])
-    @vite(['resources/js/scrollToTop.js'])
+    @vite(['resources/js/pages/login.js'])
+    @vite(['resources/js/shared/navbar.js'])
+    @vite(['resources/js/pages/periodic-table.js'])
+    @vite(['resources/js/pages/render-online.js'])
+    @vite(['resources/js/shared/scrollToTop.js'])
 
 
     <!-- Carga los componentes importados -->
     @vite(['resources/css/app.css'])
-    @vite('resources/css/views/landing.css')
-    @vite('resources/css/views/login.css')
-    @vite('resources/css/views/navbar.css')
-    @vite('resources/css/views/periodic-table.css')
-    @vite('resources/css/views/render-online.css')
+    @vite('resources/css/views/pages/landing.css')
+    @vite('resources/css/views/pages/login.css')
+    @vite('resources/css/views/shared/navbar.css')
+    @vite('resources/css/views/pages/periodic-table.css')
+    @vite('resources/css/views/pages/render-online.css')
 
 
 

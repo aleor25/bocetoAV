@@ -3,17 +3,17 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('landing');
+    return view('pages.landing');
 });
 
 Route::get('/login', function () {
-    return view('layouts.login');
+    return view('pages.login');
 })->name('login');
 
 Route::get('/periodictable', function () {
-    return view('layouts.periodic-table');
+    return view('pages.periodic-table');
 })->name('periodic-table');
 
 Route::get('/renderonline', function () {
-    return view('layouts.render-online');
+    return view('pages.render-online');
 })->name('render-online');

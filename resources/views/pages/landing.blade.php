@@ -10,9 +10,9 @@
             <img src="{{ asset('images/desk.png') }}" alt="Monitor" class="w-300 max-w-[400px] animate-pulse" />
             <div class="text-center max-w-[500px] flex flex-col items-center">
                 <div class="flex flex-col items-center gap-2 mb-4">
-                    <button style="background-color: #fff; color: var(--primary); border-color: var(--primary); position: relative; left: -20px;" class="border-4 rounded-lg w-[175px] text-[1.75rem] font-bold py-2 px-5 mb-2 transition-transform duration-300 hover:scale-110">Explora</button>
-                    <button style="background-color: var(--secondary); color: #fff; border-color: var(--primary); position: relative; right: -90px;" class="border-4 rounded-lg w-[175px] text-[1.75rem] font-bold py-2 px-5 mb-2 transition-transform duration-300 hover:scale-110">Aprende</button>
-                    <button style="background-color: var(--accent); color: var(--primary); border-color: var(--primary); position: relative; left: -5px;" class="border-4 rounded-lg w-[175px] text-[1.75rem] font-bold py-2 px-5 mb-2 transition-transform duration-300 hover:scale-110">Crea</button>
+                    <a href="#" style="background-color: #fff; color: var(--primary); border-color: var(--primary); position: relative; left: -20px;" class="border-4 rounded-lg w-[175px] text-[1.75rem] font-bold py-2 px-5 mb-2 flex items-center justify-center transition-transform duration-300 hover:scale-110">Explora</a>
+                    <a href="#" style="background-color: var(--secondary); color: #fff; border-color: var(--primary); position: relative; right: -90px;" class="border-4 rounded-lg w-[175px] text-[1.75rem] font-bold py-2 px-5 mb-2 flex items-center justify-center transition-transform duration-300 hover:scale-110">Aprende</a>
+                    <a href="#" style="background-color: var(--accent); color: var(--primary); border-color: var(--primary); position: relative; left: -5px;" class="border-4 rounded-lg w-[175px] text-[1.75rem] font-bold py-2 px-5 mb-2 flex items-center justify-center transition-transform duration-300 hover:scale-110">Crea</a>
                 </div>
                 <hr class="border-0 h-[10px] my-5 w-full" style="background-color: var(--secondary);" />
                 <p class="mt-2">¡Únete a la nueva era educativa y lleva la ciencia al siguiente nivel!</p>
@@ -37,14 +37,14 @@
                 <p class="mb-4 text-right">Descubre todos los elementos químicos, sus propiedades y características de manera interactiva. Una herramienta esencial para estudiantes y amantes de la química.</p>
                 <div class="mt-5">
                     <a href="{{ route('periodic-table') }}"
-                        class="inline-flex items-center justify-center text-[1.2rem] py-3 px-6 rounded-lg cursor-pointer gap-2 transition-all duration-400 shadow-md hover:bg-[var(--secondary)] hover:-translate-y-1 hover:shadow-lg active:translate-y-0.5" 
+                        class="inline-flex items-center justify-center text-[1.2rem] py-3 px-6 rounded-lg cursor-pointer gap-2 transition-all duration-400 shadow-md hover:bg-[var(--secondary)] hover:-translate-y-1 hover:shadow-lg active:translate-y-0.5"
                         style="background-color: var(--primary); color: #fff;">
                         <i class="fas fa-atom w-5 h-5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"></i>
                         Ver tabla periódica
                     </a>
                 </div>
             </div>
-            <img src="{{ asset('images/tbpicon.png') }}" alt="Icono tabla periódica" class="w-[300px] h-auto m-2 transition-transform duration-300 hover:scale-110" />
+            <img src="{{ asset('images/tbp-icon.png') }}" alt="Icono tabla periódica" class="w-[300px] h-auto m-2 transition-transform duration-300 hover:scale-110" />
         </div>
     </div>
 
@@ -55,7 +55,7 @@
                 <h2 class="text-2xl mb-2" style="font-family: 'Lilita One', cursive;">Misión</h2>
                 <p class="text-left">Proporcionar a estudiantes y docentes una herramienta educativa innovadora que facilite la comprensión de conceptos abstractos, fomente el pensamiento crítico y creativo, y promueva un aprendizaje activo y significativo.</p>
             </div>
-            <img src="{{ asset('images/quimico.png') }}" alt="Químico" class="w-[300px] h-auto m-2 transition-transform duration-300 hover:scale-110" />
+            <img src="{{ asset('images/chemist.png') }}" alt="Químico" class="w-[300px] h-auto m-2 transition-transform duration-300 hover:scale-110" />
         </div>
     </div>
 
@@ -81,7 +81,7 @@
                 <!-- Valor 1 -->
                 <div class="text-center max-w-[200px] flex flex-col items-center">
                     <div class="rounded-full w-[150px] h-[150px] flex items-center justify-center shadow-lg mb-4" style="background-color: var(--primary);">
-                        <img src="{{ asset('images/generacion.png') }}" alt="Innovación" class="w-[80px] h-[80px]" />
+                        <img src="{{ asset('images/innovation.png') }}" alt="Innovación" class="w-[80px] h-[80px]" />
                     </div>
                     <div class="font-bold text-lg leading-none flex flex-col items-center">
                         <span>Innovación</span>
@@ -93,7 +93,7 @@
                 <!-- Valor 2 -->
                 <div class="text-center max-w-[200px] flex flex-col items-center">
                     <div class="rounded-full w-[150px] h-[150px] flex items-center justify-center shadow-lg mb-4" style="background-color: var(--info); border: 4px solid var(--primary);">
-                        <img src="{{ asset('images/gafas-de-proteccion.png') }}" alt="Seguridad" class="w-[80px] h-[80px] filter brightness-50 contrast-100" />
+                        <img src="{{ asset('images/safety-glasses.png') }}" alt="Seguridad" class="w-[80px] h-[80px] filter brightness-50 contrast-100" />
                     </div>
                     <div class="font-bold text-lg leading-none flex flex-col items-center">
                         <span>Seguridad</span>
@@ -105,7 +105,7 @@
                 <!-- Valor 3 -->
                 <div class="text-center max-w-[200px] flex flex-col items-center">
                     <div class="rounded-full w-[150px] h-[150px] flex items-center justify-center shadow-lg mb-4" style="background-color: var(--primary);">
-                        <img src="{{ asset('images/grupo.png') }}" alt="Colaboración" class="w-[80px] h-[80px]" />
+                        <img src="{{ asset('images/group.png') }}" alt="Colaboración" class="w-[80px] h-[80px]" />
                     </div>
                     <div class="font-bold text-lg leading-none flex flex-col items-center">
                         <span>Colaboración</span>
