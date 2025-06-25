@@ -267,3 +267,29 @@ function mostrarLeyenda() {
 function ocultarLeyenda() {
     document.getElementById('floatingLegend').classList.add('hidden');
 }
+
+// Drag and Drop para el visor 3D
+// ...existing code...
+
+const viewer = document.getElementById('viewer');
+const dropMessage = document.getElementById('dropMessage');
+
+if (viewer && dropMessage) {
+    viewer.addEventListener('dragover', function(e) {
+        e.preventDefault();
+        dropMessage.style.display = 'flex';
+    });
+    viewer.addEventListener('dragenter', function(e) {
+        e.preventDefault();
+        dropMessage.style.display = 'flex';
+    });
+    viewer.addEventListener('dragleave', function(e) {
+        e.preventDefault();
+        dropMessage.style.display = 'none';
+    });
+    viewer.addEventListener('drop', function(e) {
+        e.preventDefault();
+        dropMessage.style.display = 'none';
+        // Aquí tu lógica para manejar el archivo .pdb
+    });
+}

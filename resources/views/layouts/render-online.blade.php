@@ -21,40 +21,24 @@
                         <!-- Leyenda flotante -->
                         <div
                             id="floatingLegend"
-                            class="absolute top-0 left-full ml-3 w-[320px] bg-white text-[#1B475D] border border-[#ccc] rounded-lg shadow-xl p-5 text-sm z-50 hidden group-hover:block">
+                            class="absolute top-0 left-full ml-3 w-[320px] bg-white text-[#1B475D] border border-[var(--primary)] rounded-lg shadow-xl p-5 text-sm z-50 hidden group-hover:block">
                             <h3 class="font-bold mb-4 text-base">Instrucciones de uso</h3>
                             <ul class="space-y-3">
                                 <li class="flex items-start gap-3">
-                                    <div class="w-6 text-center">
-                                        <i class="fas fa-expand text-[1rem] text-[var(--primary)]"></i>
-                                    </div>
-                                    <p class="text-sm leading-snug">
-                                        <b>Pantalla completa:</b> Haz clic para ampliar la visualización del modelo.
-                                    </p>
+                                    <i class="fas fa-expand text-[1rem] mt-1 text-[var(--primary)]" style="min-width: 20px; min-height: 20px; max-width: 20px; max-height: 20px;"></i>
+                                    <span><b>Pantalla completa:</b> Haz clic para ampliar la visualización del modelo.</span>
                                 </li>
                                 <li class="flex items-start gap-3">
-                                    <div class="w-6 text-center">
-                                        <i class="fas fa-sync-alt text-[1rem] text-[var(--primary)]"></i>
-                                    </div>
-                                    <p class="text-sm leading-snug">
-                                        <b>Reiniciar vista:</b> Restaura la orientación inicial del modelo.
-                                    </p>
+                                    <i class="fas fa-sync-alt text-[1rem] mt-1 text-[var(--primary)]" style="min-width: 20px; min-height: 20px; max-width: 20px; max-height: 20px;"></i>
+                                    <span><b>Reiniciar vista:</b> Restaura la orientación inicial del modelo.</span>
                                 </li>
                                 <li class="flex items-start gap-3">
-                                    <div class="w-6 text-center">
-                                        <i class="fas fa-mouse-pointer text-[1rem] text-[var(--primary)]"></i>
-                                    </div>
-                                    <p class="text-sm leading-snug">
-                                        <b>Ver detalles:</b> Haz clic sobre un átomo para obtener información específica.
-                                    </p>
+                                    <i class="fas fa-mouse-pointer text-[1rem] mt-1 text-[var(--primary)]" style="min-width: 20px; min-height: 20px; max-width: 20px; max-height: 20px;"></i>
+                                    <span><b>Ver detalles:</b> Haz clic sobre un átomo para obtener información específica.</span>
                                 </li>
                                 <li class="flex items-start gap-3">
-                                    <div class="w-6 text-center">
-                                        <i class="fas fa-cogs text-[1rem] text-[var(--primary)]"></i>
-                                    </div>
-                                    <p class="text-sm leading-snug">
-                                        <b>Modo de vista:</b> Cambia entre estilos como esferas, cartoon, bastones o superficie.
-                                    </p>
+                                    <i class="fas fa-cogs text-[1rem] mt-1 text-[var(--primary)]" style="min-width: 20px; min-height: 20px; max-width: 20px; max-height: 20px;"></i>
+                                    <span><b>Modo de vista:</b> Cambia entre estilos como esferas, cartoon, bastones o superficie.</span>
                                 </li>
                             </ul>
                         </div>
@@ -65,7 +49,7 @@
                 <div class="absolute left-2.5 right-2.5 bottom-2.5 z-10 flex justify-between items-center gap-2 min-h-[50px] px-4 py-2 rounded-lg">
                     <!-- Selector de vistas a la izquierda -->
                     <select id="renderMode"
-                        class="w-max h-9 px-1 py-2 border-2 border-[#00455e] text-[14px] bg-white rounded-lg font-bold focus:outline-none transition-colors duration-300">
+                        class="w-max h-9 px-3 py-2 border-2 border-[#00455e] text-[14px] bg-white rounded-lg font-bold focus:outline-none transition-colors duration-300">
                         <option value="sphere">Vista esferas CPK</option>
                         <option value="cartoon">Vista cartoon</option>
                         <option value="surface">Vista superficie</option>
@@ -74,19 +58,23 @@
                     <!-- Botones a la derecha -->
                     <div class="flex gap-2">
                         <button
-                            class="w-max h-9 px-1 flex items-center justify-center gap-2 bg-[var(--secondary)] text-[0.9rem] font-bold rounded-lg cursor-pointer border-2 border-[var(--primary)] transition-colors duration-300"
+                            class="w-max h-9 px-3 flex items-center justify-center gap-2 bg-[var(--secondary)] text-[0.9rem] font-bold rounded-lg cursor-pointer border-2 border-[var(--primary)] transition-colors duration-300"
                             id="fullscreenButton">
                             <i class="fas fa-expand"></i> Pantalla completa
                         </button>
                         <button
-                            class="w-max h-9 px-1 flex items-center justify-center gap-2 bg-[var(--accent)] text-[0.9rem] font-bold rounded-lg cursor-pointer border-2 border-[#00455e] transition-colors duration-300"
+                            class="w-max h-9 px-3 flex items-center justify-center gap-2 bg-[var(--accent)] text-[0.9rem] font-bold rounded-lg cursor-pointer border-2 border-[#00455e] transition-colors duration-300"
                             id="resetViewButton">
                             <i class="fas fa-sync-alt"></i> Reiniciar vista
                         </button>
                     </div>
                 </div>
                 <!-- Visor 3D -->
-                <div id="viewer" class="w-full h-full shadow-lg overflow-hidden"></div>
+                <div id="viewer" class="w-full h-full shadow-lg overflow-hidden flex items-center justify-center relative">
+                    <span class="absolute inset-0 flex items-center justify-center pointer-events-none text-gray-400 text-lg font-bold select-none" id="dropMessage">
+                        Suelta aquí tu archivo .pdb
+                    </span>
+                </div>
             </div>
         </div>
 
