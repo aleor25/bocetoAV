@@ -58,7 +58,7 @@
     <div style="background-color: var(--primary);" class="w-full">
         <div class="flex flex-col md:flex-row items-center justify-between text-white px-4 md:px-[70px] py-12 gap-5 flex-wrap md:flex-nowrap w-full">
             <div class="max-w-[500px]">
-                <h2 class="text-2xl mb-2" style="font-family: 'Lilita One', cursive;">Misión</h2>
+                <h2 class="text-2xl mb-2">Misión</h2>
                 <p class="text-left text-justify">Proporcionar a estudiantes y docentes una herramienta educativa innovadora que facilite la comprensión de conceptos abstractos, fomente el pensamiento crítico y creativo, y promueva un aprendizaje activo y significativo.</p>
             </div>
             <img src="{{ asset('images/chemist.png') }}" alt="Químico" class="w-full max-w-[150px] md:max-w-[300px] h-auto m-2 transition-transform duration-300 hover:scale-110" />
@@ -69,7 +69,7 @@
     <div style="background-color: var(--secondary);" class="w-full">
         <div class="flex flex-col md:flex-row-reverse items-center justify-between px-4 md:px-[70px] py-12" style="color: var(--primary);">
             <div class="max-w-[500px] order-1 md:order-none">
-                <h2 class="text-2xl mb-2 text-right" style="font-family: 'Lilita One', cursive;">Visión</h2>
+                <h2 class="text-2xl mb-2 text-right">Visión</h2>
                 <p class="text-right text-justify">Ser la solución educativa en química molecular para telesecundarias de la región, extendiendo el acceso a laboratorios virtuales y revolucionando la enseñanza con tecnología para impulsar la educación científica y el desarrollo en contextos diversos.</p>
             </div>
             <img src="{{ asset('images/vision.png') }}" alt="Visión" class="w-full max-w-[150px] md:max-w-[300px] h-auto m-2 transition-transform duration-300 hover:scale-110 order-2 md:order-none" />
@@ -80,7 +80,7 @@
     <div class="w-full bg-white">
         <div class="text-center px-4 md:px-[70px] py-6 w-full">
             <hr class="border-0 h-[9px] my-6 w-full" style="background-color: var(--accent);" />
-            <h2 class="text-2xl text-center py-4" style="font-family: 'Lilita One', cursive;">Valores</h2>
+            <h2 class="text-2xl text-center py-4">Valores</h2>
             <hr class="border-0 h-[9px] my-6 w-full" style="background-color: var(--accent);" />
 
             <div class="flex flex-col md:flex-row justify-center items-center mt-6 gap-6 flex-wrap md:flex-nowrap"> <!-- Valor 1 -->
