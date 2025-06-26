@@ -2,13 +2,15 @@
 @section('title', 'Tabla periodica')
 @section('content')
 
-<div class="max-w-6xl mx-auto px-[70px] py-8">
-    <h1 class="text-3xl mb-4 font-bold text-[var(--primary)]">Tabla periódica</h1>
+<div class="max-w-6xl mx-auto px-4 md:px-[70px] py-8">
+    <h1 class="text-2xl text-center md:text-3xl mb-4 font-bold text-[var(--primary)]">Tabla periódica</h1>
 
     <div class="relative flex flex-col items-center mb-4">
-        <img src="{{ asset('images/tabp.jpg') }}" alt="Tabla periódica" class="max-w-full h-auto rounded-xl border border-gray-300 shadow tabla-img-tailwind cursor-zoom-in transition-transform duration-300 hover:scale-105" id="zoomable-image">
+        <img src="{{ asset('images/tabp.jpg') }}" alt="Tabla periódica"
+            class="w-full max-w-full md:max-w-3xl h-auto rounded-xl border border-gray-300 shadow tabla-img-tailwind cursor-zoom-in transition-transform duration-300 hover:scale-105"
+            id="zoomable-image">
         <button class="zoom-icon-tailwind" onclick="openModal()">🔍</button>
-        <p class="italic text-[var(--secondary)] mt-2">Fuente: (UDTcl, 2019)</p>
+        <p class="italic text-[var(--secondary)] mt-2 text-sm md:text-base">Fuente: (UDTcl, 2019)</p>
     </div>
 
     <!-- Modal para la imagen ampliada -->
@@ -60,11 +62,11 @@
 
     @foreach ($dropdowns as $titulo => $data)
     <div class="rounded-lg bg-gray-100 my-4 overflow-hidden shadow">
-        <button class="w-full flex items-center justify-between text-left px-6 py-4 bg-[var(--primary)] text-white text-lg font-semibold dropdown-button-tailwind" onclick="toggleDropdown(this)">
+        <button class="w-full flex items-center justify-between text-left px-4 md:px-6 py-4 bg-[var(--primary)] text-white text-base md:text-lg font-semibold dropdown-button-tailwind" onclick="toggleDropdown(this)">
             <span>{{ $titulo }}</span>
             <img src="{{ asset('images/arrow-down.png') }}" alt="Desplegar" class="ml-3 transition-transform duration-300 arrow-icon" style="width: 28px; height: 18px; min-width: 28px; min-height: 18px;">
         </button>
-        <div class="dropdown-content-tailwind px-6 bg-white">
+        <div class="dropdown-content-tailwind px-4 md:px-6 bg-white text-sm md:text-base text-black">
             @if($data['type'] == 'paragraph')
             <p>{{ $data['content'] }}</p>
             @elseif($data['type'] == 'list')
@@ -75,8 +77,8 @@
             </ul>
             @elseif($data['type'] == 'nested')
             @foreach($data['content'] as $subtitulo => $items)
-            <h3 class="font-bold">{{ $subtitulo }}</h3>
-            <ul class="list-disc pl-6">
+            <h3>{{ $subtitulo }}</h3>
+            <ul class="list-disc pl-6 py-4">
                 @foreach($items as $item)
                 <li>{{ $item }}</li>
                 @endforeach
@@ -87,15 +89,15 @@
     </div>
     @endforeach
 
-    <h2 class="text-2xl font-bold mt-10 mb-4 text-[var(--primary)]">Elementos más usados</h2>
+    <h2 class="text-xl md:text-2xl font-bold mt-10 mb-4 text-[var(--primary)]">Elementos más usados</h2>
 
-    <div class="overflow-x-auto pb-4 px-2">
-        <table class="w-full border-collapse shadow-lg rounded-2xl overflow-hidden border border-gray-300">
+    <div class="overflow-x-auto pb-4 px-0 md:px-2">
+        <table class="w-full border-collapse shadow-lg rounded-2xl overflow-hidden border border-gray-300 text-xs md:text-base">
             <thead>
                 <tr>
-                    <th class="bg-[var(--primary)] text-white px-4 py-2 text-center border border-gray-300">Elemento</th>
-                    <th class="bg-[var(--primary)] text-white px-4 py-2 text-center border border-gray-300">Símbolo</th>
-                    <th class="bg-[var(--primary)] text-white px-4 py-2 text-center border border-gray-300">Usos comunes</th>
+                    <th class="bg-[var(--primary)] text-white px-2 md:px-4 py-2 text-center border border-gray-300">Elemento</th>
+                    <th class="bg-[var(--primary)] text-white px-2 md:px-4 py-2 text-center border border-gray-300">Símbolo</th>
+                    <th class="bg-[var(--primary)] text-white px-2 md:px-4 py-2 text-center border border-gray-300">Usos comunes</th>
                 </tr>
             </thead>
             <tbody style="color: #333;">
@@ -156,7 +158,6 @@
                 </tr>
             </tbody>
         </table>
-
     </div>
 </div>
 
